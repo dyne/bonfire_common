@@ -10,6 +10,8 @@ defmodule Bonfire.Common.MixProject do
       start_permanent: Mix.env() == :prod,
       compilers: [:phoenix, :gettext] ++ Mix.compilers(),
       deps: Mess.deps [
+        {:phoenix, ">= 0.0.0"},
+        {:phoenix_live_view, ">= 0.0.0"},
         {:dbg, "~> 1.0", only: :dev},
         {:zest, "~> 0.1", optional: true},
         # {:bonfire_boundaries, git: "https://github.com/bonfire-networks/bonfire_boundaries#main", optional: true}
